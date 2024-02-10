@@ -21,10 +21,10 @@ document.querySelector('#add').addEventListener('click', function () {
             var temperature = data['main']['temp'];
             var windSpeed = data['wind']['speed'];
 
-            cityOutput.innerHTML = `<img src="./images/02d.svg" alt="" class="img1">Weather of <span>${nameval}</span>`;
-            temp.innerHTML = `<img src="./images/feels-like.svg" alt="" class="img2">Temp: <span>${convertion(temperature)}°C</span>`;
-            description.innerHTML = ` <img src="./images/cloud.png" alt="">Sky conditions: <span>${descrp}</span>`;
-            wind.innerHTML = `<img src="./images/wind.svg" alt="" class="img3"> Wind Speed:<span>${windSpeed} m/s</span>`;
+            cityOutput.innerHTML = `<img src="images/02d.svg" alt="" class="img1">Weather of <span>${nameval}</span>`;
+            temp.innerHTML = `<img src="images/feels-like.svg" alt="" class="img2">Temp: <span>${convertion(temperature)}°C</span>`;
+            description.innerHTML = ` <img src="images/cloud.png" alt="">Sky conditions: <span>${descrp}</span>`;
+            wind.innerHTML = `<img src="images/wind.svg" alt="" class="img3"> Wind Speed:<span>${windSpeed} m/s</span>`;
         })
         .catch(err => {
             console.error(err);
@@ -42,10 +42,10 @@ function start(){
         var temperature = data['main']['temp'];
         var windSpeed = data['wind']['speed'];
 
-        cityOutput.innerHTML = `<img src="./images/02d.svg" alt="" class="img1">Weather of <span>${nameval}</span>`;
-        temp.innerHTML = `<img src="./images/feels-like.svg" alt="" class="img2">Temp: <span>${convertion(temperature)}°C</span>`;
-        description.innerHTML = ` <img src="./images/cloud.png" alt="">Sky conditions: <span>${descrp}</span>`;
-        wind.innerHTML = `<img src="./images/wind.svg" alt="" class="img3"> Wind Speed:<span>${windSpeed} m/s</span>`;
+        cityOutput.innerHTML = `<img src="images/02d.svg" alt="" class="img1">Weather of <span>${nameval}</span>`;
+        temp.innerHTML = `<img src="images/feels-like.svg" alt="" class="img2">Temp: <span>${convertion(temperature)}°C</span>`;
+        description.innerHTML = ` <img src="images/cloud.png" alt="">Sky conditions: <span>${descrp}</span>`;
+        wind.innerHTML = `<img src="images/wind.svg" alt="" class="img3"> Wind Speed:<span>${windSpeed} m/s</span>`;
     })
     .catch(err => {
         console.error(err);
